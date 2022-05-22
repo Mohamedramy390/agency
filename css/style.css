@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Cairo';
+}
+
+header .noTransparrent {
+    background-color: #fff ;
+    border: 1px solid #eee ;
+}
+header .noTransparrent .nav-link{
+    color: #16aeca !important;
+}
+header .noTransparrent .nav-link:hover , header .noTransparrent .nav-link.active{
+    background-color: #16aeca !important;
+    color: #dae413 !important;
+}
+header{
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+header .layer{
+    background: linear-gradient(to right, rgba(46, 178, 181, 0.8), rgba(197, 203, 50, 0.8));
+    height: 100vh;
+    position: relative;
+}
+header .navbar{
+    z-index: 15;
+}
+header .navbar .navbar-brand img{
+    width: 80%;
+}
+
+header .navbar .navbar-nav .nav-link{
+    font-size: 16px ;
+    color: #e8e8e8;
+    line-height: 40px ;
+    padding: 0 16px ;
+    transition: .5s;
+}
+header .navbar .navbar-nav .nav-link:hover , header .navbar .navbar-nav .nav-link.active {
+    background-color: #e8e8e8;
+    color: #16aeca ;
+}
+header .layer .carousel-item{
+    min-height: 100vh;
+}
+header .layer .carousel-item .carousel-contant{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    right: 15%;
+    text-align: center;
+}
+header .layer .carousel-item .carousel-contant h2{
+    font-size: 40px;
+    line-height: 52px;
+    color: #fff;
+    margin-bottom: 60px;
+}
+header .layer .carousel-item .carousel-contant a{
+    padding: 13px 47px;
+    background-color: #16aeca;
+    color: #fff;
+    border-radius:30px;
+    text-decoration: none;
+    transition: .5s;
+}
+header .layer .carousel-item .carousel-contant a:hover{
+    background-color: #dae413;
+    color: #555;
+}
+main .services{
+    min-height: 100vh;
+    padding: 80px 0;
+}
+main .services .ser-title{
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #070c0c;
+}
+main .services .card{
+    text-align: center;
+    height: 330px;
+    padding: 50px;
+    margin-bottom: 20px;
+    transition: .9s ease;
+}
+main .services .card:hover{
+    height: 410px;
+}
+main .services .card img{
+    width: 140px;
+    height: 140px;
+}
+main .services .card .card-body h4{
+    font-size: 24px;
+    color: #070c0c;
+    margin-bottom: 25px;
+}
+main .services .card .card-text {
+    font-size: 15px;
+    line-height: 21px;
+    color: #919191;
+    opacity: 0;
+    transition: .9s ease;
+}
+main .services .card:hover .card-text{
+    opacity: 100%;
+}
+main .gallery .gallery-title{
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #070c0c;
+}
+main .gallery .gallery-work a{
+    position: relative;
+    display: block;
+}
+main .gallery .gallery-work img{
+    width: 100%;
+}
+main .gallery .gallery-work .img-hover {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    color: #fff;
+    top: 5%;
+    left: 5%;
+    background-color: rgba(22, 174, 202, 0.9);
+    z-index: 5;
+    opacity: 0;
+    transition: .5s ease;
+}
+main .gallery .gallery-work .img-hover i{
+    position: absolute;
+    bottom: 50%;
+    right: 45%;
+    font-size: 36px;
+    opacity: 0;
+    transition: .5s ease;
+}
+main .gallery .gallery-work a:hover .img-hover, main .gallery .gallery-work .img-hover i{
+    opacity: 90%;
+}
+main .gallery .gallery-work .overlay{
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 5% 10%;
+    width: 100%;
+    height: 100vh;
+    z-index: 30;
+    opacity: 0;
+    margin-top: -100vh;
+    transition: all 1s ease;
+}
+main .gallery .gallery-work .overlay:target{
+    margin-top: 0;
+    opacity: 1;
+}
+main .gallery .gallery-work .overlay .overlay-text a.close{
+    color: #16aeca;
+    position: absolute;
+    top: 4%;
+    left: 7%;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+main .gallery .gallery-work .overlay .overlay-text h4{
+    font-size: 36px;
+    line-height: 52px;
+    color: #16aeca;
+    margin-bottom: 30px;
+}
+main .gallery .gallery-work .overlay .overlay-text li a{
+    color: #555;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+main .gallery .gallery-work .overlay .overlay-text ul{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #efefef;
+}
+main .gallery .gallery-work .overlay .overlay-text p{
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 50px;
+    color: #919191;
+}
+main .information {
+    background-image: url(../images/bg-2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+main .information .overlay{
+    background-color: rgba(22, 174, 202, 0.8);
+    padding: 140px 0 100px;
+}
+main .information .overlay .count{
+    font-size: 40px;
+    font-weight: bold;
+    color: #ddfaff;
+    margin: 50px auto 30px;
+}
+main .information .overlay .counter{
+    font-size: 18px;
+    line-height: 22px;
+    color: #85ecff;
+}
+main .contact{
+    padding: 100px 0 60px;
+}
+main .contact .company-adress h4{
+    font-size: 24px;
+    color: #181c1c;
+    margin-bottom: 40px;
+}
+main .contact .company-adress p{
+    font-size: 18px;
+    line-height: 25px;
+    color: #16aeca;
+    font-weight: 500;
+}
+main .contact .contact-text h4{
+    font-size: 24px;
+    color: #181c1c;
+    margin-bottom: 20px;
+    margin-top: 70px;
+    font-weight: bold;
+}
+main .contact .contact-text form{
+    width: 60%;
+}
+main .contact .contact-text form input , .contact .contact-text form textarea{
+    background-color: #f7f7f7;
+    border: 2px solid #ececec;
+    color: #5c5c5c;
+    font-size: 15px;
+    line-height: 25px;
+    border-radius: 3px;
+    text-align: right;
+}
+main .contact .contact-text form button{
+    background-color: #16aeca;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 3px;
+    width: auto;
+    border: 0;
+    float: right;
+}
+main .sum{
+    padding: 75px 0;
+    background-color: #171717;
+}
+main .sum .sum-text h5{
+    font-size: 18px;
+    line-height: 45px;
+    color: #85ecff;
+    margin-bottom: 30px;
+    position: relative;
+}
+main .sum .sum-text h5::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 35px;
+    height: 3px;
+    background-color: #5c5c5c;
+}
+main .sum .sum-text p{
+    font-size: 15px;
+    line-height: 22px;
+    color: #919191;
+    margin-bottom: 60px;
+}
+main .sum .social-icons ul{
+    cursor: pointer;
+}
+main .sum .social-icons ul li{
+    list-style: none;
+    display: inline-block;
+}
+main .sum .social-icons ul a{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #333333;
+    color: #acacac;
+    display: block;
+    border-radius: 2px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+main .sum .social-icons ul a:hover{
+    background-color: #16aeca;
+    color: #fff;
+}
+.sum .about ul li{
+    list-style: none;
+    margin-bottom: 35px;
+}
+.sum .about ul li span{
+    font-size: 18px;
+    color: #676767;
+    margin-right: 10px;
+}
+.sum .about ul li i{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #333333;
+    color: #acacac;
+    border-radius: 2px;
+    text-align: center;
+}
+footer .copy-right{
+    background-color: #111111;
+    padding: 30px 0;
+}
+footer .copy-right p{
+    font-size: 15px;
+    color: #acacac;
+}
+#year{
+    margin-right: 3px;
+}
